@@ -37,6 +37,18 @@ int main(int argc, char const *argv[])
         }
         printf("\n");
 }
-    
+//Generar la suma de la matriz
+    int C[fila][columna];
+
+    printf("La suma de las matrices es\n");
+    for (int i = 0; i < fila; i++){
+        for (int j = 0; j < columna; j++)
+        {
+            C[i][j] = A[i][j]+B[i][j];
+            printf("%d ", C[i][j]);
+        }
+        printf("\n");
+}
+
     return 0;
 }
